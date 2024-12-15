@@ -36,11 +36,6 @@ export const Challenges = () => {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 50" className="w-full" preserveAspectRatio="none">
-          <path fill="#f6e9ce" fillOpacity="1" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,50L1392,50C1344,50,1248,50,1152,50C1056,50,960,50,864,50C768,50,672,50,576,50C480,50,384,50,288,50C192,50,96,50,48,50L0,50Z"></path>
-        </svg>
-      </div>
     </section>
   );
 };

@@ -26,6 +26,9 @@ const Index = () => {
         <FAQ />
       </section>
       <CTA />
+      <div className="bg-black/90 text-white py-2 text-center text-sm">
+        This site was made with AI in less than 6 hours 🙂
+      </div>
     </main>
   );
 };
