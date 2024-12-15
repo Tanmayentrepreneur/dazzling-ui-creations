@@ -7,18 +7,18 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-dots-pattern opacity-50"></div>
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center max-w-6xl mx-auto gap-12">
-          <div className="w-full md:w-1/2 space-y-6 md:space-y-8 text-left">
+          <div className="w-full md:w-1/2 space-y-6 md:space-y-8 text-center md:text-left"> {/* Added text-center for mobile */}
             <h1 className="text-5xl md:text-7xl font-bold">
               Hi, I'm Tanmay
             </h1>
             <h2 className="text-3xl md:text-5xl font-semibold">
               I Supercharge businesses with <span className="text-green-600">AI</span> ⚡
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
+            <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0"> {/* Added mx-auto for mobile centering */}
               AI automations expert and technical AI tutorials writer at Ben's Bites (100k+ readers). 
               I help businesses implement practical AI solutions that drive real results.
             </p>
-            <div className="flex justify-start pt-6">
+            <div className="flex justify-center md:justify-start pt-6"> {/* Added justify-center for mobile */}
               <a 
                 href="https://calendly.com/tanmay-iamtanmay/30min"
                 target="_blank"

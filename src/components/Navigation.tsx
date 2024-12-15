@@ -39,7 +39,7 @@ export const Navigation = () => {
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'md:bg-white/80 md:backdrop-blur-lg md:shadow-md' : ''}`}>
         <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center h-20"> {/* Increased height from h-16 to h-20 */}
+          <div className="flex justify-between items-center h-24"> {/* Increased height from h-20 to h-24 */}
             <button 
               className="md:hidden p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -47,7 +47,7 @@ export const Navigation = () => {
               {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
             
-            <div className="hidden md:flex space-x-8 justify-center flex-1">
+            <div className="hidden md:flex space-x-12 justify-center flex-1"> {/* Increased space-x-8 to space-x-12 */}
               {[
                 { id: 'hero', label: 'Home' },
                 { id: 'challenges', label: 'Challenges' },
@@ -58,9 +58,9 @@ export const Navigation = () => {
                 <button
                   key={id}
                   onClick={() => scrollToSection(id)}
-                  className={`text-base font-medium transition-colors hover:text-accent ${
+                  className={`text-lg font-medium transition-colors hover:text-accent ${
                     activeSection === id ? 'text-accent' : 'text-primary'
-                  }`}
+                  }`} /* Increased text-base to text-lg */
                 >
                   {label}
                 </button>
@@ -69,7 +69,7 @@ export const Navigation = () => {
                 href="https://calendly.com/tanmay-iamtanmay/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-white px-6 py-3 rounded-full text-base font-medium transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:translate-y-[-2px]"
+                className="bg-black text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:translate-y-[-2px]"
               >
                 Book a Call
               </a>
