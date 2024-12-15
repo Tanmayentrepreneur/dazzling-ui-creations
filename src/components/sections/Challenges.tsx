@@ -17,10 +17,10 @@ const challenges = [
 
 export const Challenges = () => {
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-white relative">
       <div className="max-w-7xl mx-auto">
-        <h2 className="section-title text-center">Sound familiar?</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="section-title text-center mb-12">Sound familiar?</h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {challenges.map((challenge, index) => (
             <motion.div
               key={index}
@@ -28,17 +28,17 @@ export const Challenges = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="glass-card p-8 rounded-2xl"
+              className="glass-card p-6 md:p-8 rounded-2xl h-full flex flex-col"
             >
-              <h3 className="text-xl font-semibold mb-4">{challenge.title}</h3>
-              <p className="text-muted-foreground">{challenge.description}</p>
+              <h3 className="text-lg md:text-xl font-semibold mb-4">{challenge.title}</h3>
+              <p className="text-muted-foreground text-sm md:text-base">{challenge.description}</p>
             </motion.div>
           ))}
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 100" className="w-full">
-          <path fill="#f6e9ce" fillOpacity="1" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+        <svg viewBox="0 0 1440 50" className="w-full" preserveAspectRatio="none">
+          <path fill="#f6e9ce" fillOpacity="1" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,50L1392,50C1344,50,1248,50,1152,50C1056,50,960,50,864,50C768,50,672,50,576,50C480,50,384,50,288,50C192,50,96,50,48,50L0,50Z"></path>
         </svg>
       </div>
     </section>
