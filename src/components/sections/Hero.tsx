@@ -17,17 +17,22 @@ export const Hero = () => {
               Hi, I'm Tanmay
             </h1>
             <h2 className="text-3xl md:text-4xl font-semibold mb-6 flex items-center gap-2">
-              I supercharge your business with AI
-              <span className="animate-bounce">⚡</span>
+              I supercharge your business with <span className="text-green-600">AI</span>
+              <span>⚡</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-xl">
               AI automations expert and technical AI tutorials writer at Ben's Bites (100k+ readers). 
               I help businesses implement practical AI solutions that drive real results.
             </p>
-            <button className="bg-black text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:bg-black/90 transition-all">
+            <a 
+              href="https://calendly.com/tanmay-iamtanmay/30min"
+              target="_blank"
+              rel="noopener noreferrer" 
+              className="bg-black text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:bg-black/90 transition-all"
+            >
               Book a Strategy Call
               <MessageCircle className="w-5 h-5" />
-            </button>
+            </a>
           </motion.div>
           
           <motion.div
@@ -41,6 +46,7 @@ export const Hero = () => {
                 src="/lovable-uploads/72f0edda-969d-4480-ab7b-c57e9c3c183d.png"
                 alt="Tanmay"
                 className="rounded-2xl shadow-2xl"
+                style={{ transform: 'rotate(-90deg)', maxHeight: '400px', objectFit: 'cover' }}
               />
             </div>
           </motion.div>
@@ -52,7 +58,6 @@ export const Hero = () => {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-20"
         >
-          <p className="text-center text-muted-foreground mb-8">Trusted by innovative companies</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             <a href="https://bensbites.com" target="_blank" rel="noopener noreferrer">
               <img src="/lovable-uploads/a22e121d-b85f-4d69-837f-0c1523121397.png" alt="Ben's Bites" className="h-8 md:h-10" />
