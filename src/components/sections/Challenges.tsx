@@ -28,7 +28,7 @@ export const Challenges = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="glass-card p-6 md:p-8 rounded-2xl h-full flex flex-col"
+              className="bg-[#eeded8] p-6 md:p-8 rounded-2xl h-full flex flex-col shadow-lg"
             >
               <h3 className="text-lg md:text-xl font-semibold mb-4">{challenge.title}</h3>
               <p className="text-muted-foreground text-sm md:text-base">{challenge.description}</p>
