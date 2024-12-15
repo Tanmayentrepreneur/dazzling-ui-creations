@@ -42,7 +42,7 @@ export default {
         },
       },
       borderRadius: {
-        DEFAULT: '0.25rem',
+        DEFAULT: '0.3rem',
       },
     },
   },
