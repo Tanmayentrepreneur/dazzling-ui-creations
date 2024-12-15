@@ -45,9 +45,9 @@ export const Navigation = () => {
       <nav className={`fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-black transition-all duration-300 ${
         isScrolled ? 'h-16' : 'h-24'
       } hidden md:block`}>
-        <div className="container mx-auto px-4">
-          <div className={`flex justify-between items-center h-full transition-all duration-300`}>
-            <div className="hidden md:flex space-x-12 justify-center flex-1">
+        <div className="container mx-auto h-full px-4">
+          <div className="flex items-center justify-center h-full">
+            <div className="flex items-center space-x-12">
               {[
                 { id: 'hero', label: 'Home' },
                 { id: 'challenges', label: 'Challenges' },
@@ -84,7 +84,9 @@ export const Navigation = () => {
                 href="mailto:Tanmay@IamTanmay.pro"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-white px-6 py-3 rounded text-lg font-medium transition-all duration-300 ease-out hover:bg-black/90"
+                className={`bg-black text-white px-6 py-2.5 rounded text-lg font-medium transition-all duration-300 ease-out hover:bg-black/90 ${
+                  isScrolled ? 'mt-0' : 'mt-0'
+                }`}
               >
                 Contact
               </a>
