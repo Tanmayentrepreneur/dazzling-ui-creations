@@ -20,7 +20,7 @@ export const Hero = () => {
             <div className="flex justify-center md:justify-start pt-6">
               <button 
                 onClick={() => window.open('https://calendly.com/tanmay-iamtanmay/30min', '_blank')}
-                className="bg-black text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-lg font-semibold flex items-center gap-3 transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:translate-y-[-2px] cursor-pointer group"
+                className="bg-black text-white px-8 md:px-10 py-4 md:py-5 rounded text-lg font-semibold flex items-center gap-3 transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:translate-y-[-2px] cursor-pointer group"
               >
                 <span className="group-hover:translate-x-0.5 transition-transform duration-300">Book a Strategy Call</span>
                 <MessageCircle className="w-6 h-6 group-hover:translate-x-0.5 transition-transform duration-300" />
@@ -57,11 +57,6 @@ export const Hero = () => {
             </a>
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 50" className="w-full" preserveAspectRatio="none">
-          <path fill="#FFFFFF" fillOpacity="1" d="M0,16L48,18.7C96,21,192,27,288,29.3C384,32,480,32,576,29.3C672,27,768,21,864,21.3C960,21,1056,27,1152,29.3C1248,32,1344,32,1392,32L1440,32L1440,50L1392,50C1344,50,1248,50,1152,50C1056,50,960,50,864,50C768,50,672,50,576,50C480,50,384,50,288,50C192,50,96,50,48,50L0,50Z"></path>
-        </svg>
       </div>
     </section>
   );

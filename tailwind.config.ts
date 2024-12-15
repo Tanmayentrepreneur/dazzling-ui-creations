@@ -41,11 +41,8 @@ export default {
           foreground: "#666666",
         },
       },
-      backgroundImage: {
-        'dots-pattern': 'radial-gradient(circle, #00000005 1px, transparent 1px)',
-      },
-      backgroundSize: {
-        'dots': '20px 20px',
+      borderRadius: {
+        DEFAULT: '0.25rem',
       },
     },
   },

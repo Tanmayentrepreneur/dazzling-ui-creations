@@ -3,13 +3,10 @@ import { Menu, X } from 'lucide-react';
 
 export const Navigation = () => {
   const [activeSection, setActiveSection] = useState('hero');
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-
       const sections = ['hero', 'challenges', 'process', 'tutorials', 'faq'];
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -37,7 +34,7 @@ export const Navigation = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'md:bg-white/80 md:backdrop-blur-lg md:shadow-md' : ''}`}>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white border-b border-black">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-24">
             <button 
@@ -54,30 +51,37 @@ export const Navigation = () => {
                 { id: 'process', label: 'Process' },
                 { id: 'tutorials', label: 'Tutorials' },
                 { id: 'faq', label: 'FAQ' },
-              ].map(({ id, label }) => (
-                <button
-                  key={id}
-                  onClick={() => scrollToSection(id)}
-                  className={`text-lg font-medium transition-colors hover:text-accent ${
-                    activeSection === id ? 'text-accent' : 'text-primary'
-                  }`}
-                >
-                  {label}
-                </button>
+                { id: 'x-profile', label: 'X Profile', href: 'https://x.com/TanmayBrainiac' },
+              ].map(({ id, label, href }) => (
+                href ? (
+                  <a
+                    key={id}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`text-lg font-medium transition-colors hover:text-accent ${
+                      activeSection === id ? 'text-accent' : 'text-primary'
+                    }`}
+                  >
+                    {label}
+                  </a>
+                ) : (
+                  <button
+                    key={id}
+                    onClick={() => scrollToSection(id)}
+                    className={`text-lg font-medium transition-colors hover:text-accent ${
+                      activeSection === id ? 'text-accent' : 'text-primary'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                )
               ))}
-              <a
-                href="https://x.com/TanmayBrainiac"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#1DA1F2] text-white px-6 py-3 rounded-full text-lg font-medium transition-all duration-300 ease-out hover:bg-[#1DA1F2]/90"
-              >
-                Twitter
-              </a>
               <a
                 href="mailto:tanmay@brainiacai.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-white px-6 py-3 rounded-full text-lg font-medium transition-all duration-300 ease-out hover:bg-black/90"
+                className="bg-black text-white px-6 py-3 rounded text-lg font-medium transition-all duration-300 ease-out hover:bg-black/90"
               >
                 Contact
               </a>
@@ -95,30 +99,23 @@ export const Navigation = () => {
             { id: 'process', label: 'Process' },
             { id: 'tutorials', label: 'Tutorials' },
             { id: 'faq', label: 'FAQ' },
-          ].map(({ id, label }) => (
+            { id: 'x-profile', label: 'X Profile', href: 'https://x.com/TanmayBrainiac' },
+          ].map(({ id, label, href }) => (
             <button
               key={id}
-              onClick={() => scrollToSection(id)}
+              onClick={() => href ? window.open(href, '_blank') : scrollToSection(id)}
               className={`block w-full text-left px-4 py-2 text-base font-medium transition-colors hover:text-accent ${
-                activeSection === id ? 'text-accent bg-gray-100 rounded-lg' : 'text-primary'
+                activeSection === id ? 'text-accent bg-gray-100 rounded' : 'text-primary'
               }`}
             >
               {label}
             </button>
           ))}
           <a
-            href="https://x.com/TanmayBrainiac"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full text-center bg-[#1DA1F2] text-white px-4 py-3 rounded-full text-base font-medium hover:bg-[#1DA1F2]/90 transition-all mt-6"
-          >
-            Twitter
-          </a>
-          <a
             href="mailto:tanmay@brainiacai.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full text-center bg-black text-white px-4 py-3 rounded-full text-base font-medium hover:bg-black/90 transition-all"
+            className="block w-full text-center bg-black text-white px-4 py-3 rounded text-base font-medium hover:bg-black/90 transition-all"
           >
             Contact
           </a>
