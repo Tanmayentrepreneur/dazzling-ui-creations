@@ -4,7 +4,6 @@ import { MessageCircle } from "lucide-react";
 export const Hero = () => {
   return (
     <section className="min-h-[120vh] flex items-center bg-[#f6e9ce] relative overflow-hidden">
-      <div className="absolute inset-0 bg-dots-pattern opacity-50"></div>
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center max-w-6xl mx-auto gap-12">
           <div className="w-full md:w-1/2 space-y-6 md:space-y-8 text-center md:text-left">
