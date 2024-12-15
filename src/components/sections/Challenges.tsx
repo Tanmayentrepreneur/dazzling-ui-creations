@@ -1,64 +1,44 @@
 import { motion } from "framer-motion";
-import { AlertTriangle, Brain, Clock, Code, DollarSign, Target } from "lucide-react";
 
 const challenges = [
   {
-    icon: <Brain className="w-8 h-8" />,
-    title: "Overwhelmed by AI Tools",
-    description: "You've tried various AI tools but they're creating more complexity instead of simplifying your workflow. You need a clear strategy that actually works."
+    title: "We've tried various AI tools, but they're just creating more work, not less.",
+    description: "Let me guess - you've got a ChatGPT subscription, tried a few custom GPTs, maybe even built some basic automations. But instead of saving time, your team is now juggling multiple systems, double-checking AI outputs, and manually fixing errors. This is what happens when tools are adopted without strategy. We help you cut through the AI noise and build automation that actually reduces work."
   },
   {
-    icon: <Clock className="w-8 h-8" />,
-    title: "Time-Consuming Setup",
-    description: "Setting up AI tools takes too much time and effort. You need efficient solutions that can be implemented quickly without disrupting your business."
+    title: "Our processes are too complex for basic automation tools.",
+    description: "\"Just use this no-code AI tool!\" they say. But your business isn't that simple, is it? You have custom workflows, specific compliance needs, and multiple systems interacting. We specialize in these scenarios, transforming complex processes into simple automations. Whether it's a 15-step approval workflow or a customer journey across six tools, we create solutions that manage complexity effortlessly. Your unique processes are not obstacles; they're opportunities for valuable automation."
   },
   {
-    icon: <DollarSign className="w-8 h-8" />,
-    title: "Cost Concerns",
-    description: "AI implementations often exceed budgets with unclear ROI. You need cost-effective solutions that deliver measurable business value."
-  },
-  {
-    icon: <Code className="w-8 h-8" />,
-    title: "Technical Complexity",
-    description: "Complex technical requirements are holding you back. You need practical solutions that don't require extensive technical expertise."
-  },
-  {
-    icon: <Target className="w-8 h-8" />,
-    title: "Unclear Direction",
-    description: "You're unsure which AI tools are right for your business. You need expert guidance to choose and implement the most effective solutions."
-  },
-  {
-    icon: <AlertTriangle className="w-8 h-8" />,
-    title: "Integration Issues",
-    description: "Integrating AI with existing systems is challenging. You need seamless solutions that work with your current business processes."
+    title: "I want to use AI, but I just don't have the time or team",
+    description: "Your developers are busy building your product, your ops team is managing growth, and your customer service team is handling increasing support volume. You know AI could help, but who will build and manage it? That's where we come in. We take care of everything—from identifying the right processes to automate to building solutions that run smoothly in the background. While your sales team closes deals, our automation nurtures leads. You focus on what you do best, and we'll ensure AI works for you."
   }
 ];
 
 export const Challenges = () => {
   return (
-    <section className="py-20 px-4 bg-white relative">
+    <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="section-title text-center">Sound familiar?</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 px-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {challenges.map((challenge, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="p-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="glass-card p-8 rounded-2xl"
             >
-              <div className="mb-4 text-primary">{challenge.icon}</div>
-              <h3 className="text-xl font-semibold mb-3">{challenge.title}</h3>
+              <h3 className="text-xl font-semibold mb-4">{challenge.title}</h3>
               <p className="text-muted-foreground">{challenge.description}</p>
             </motion.div>
           ))}
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 50" className="w-full" preserveAspectRatio="none">
-          <path fill="#f6e9ce" fillOpacity="1" d="M0,16L48,18.7C96,21,192,27,288,29.3C384,32,480,32,576,29.3C672,27,768,21,864,21.3C960,21,1056,27,1152,29.3C1248,32,1344,32,1392,32L1440,32L1440,50L1392,50C1344,50,1248,50,1152,50C1056,50,960,50,864,50C768,50,672,50,576,50C480,50,384,50,288,50C192,50,96,50,48,50L0,50Z"></path>
+        <svg viewBox="0 0 1440 100" className="w-full">
+          <path fill="#f6e9ce" fillOpacity="1" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
         </svg>
       </div>
     </section>

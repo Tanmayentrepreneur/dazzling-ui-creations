@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-[#f6e9ce] relative overflow-hidden">
+    <section className="min-h-screen flex items-center bg-[#f6e9ce] relative overflow-hidden">
       <div className="absolute inset-0 bg-dots-pattern opacity-50"></div>
       <div className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -11,55 +11,48 @@ export const Hero = () => {
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
               Hi, I'm Tanmay
             </h1>
-            <h2 className="text-3xl md:text-4xl font-semibold mb-6 flex items-center gap-2">
-              I Supercharge businesses with{" "}
-              <span className="text-green-600 inline-flex items-center">
-                AI <span className="ml-1">⚡</span>
-              </span>
+            <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+              I Supercharge businesses with <span className="text-green-600">AI</span> ⚡
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-xl">
               AI automations expert and technical AI tutorials writer at Ben's Bites (100k+ readers). 
               I help businesses implement practical AI solutions that drive real results.
             </p>
             <div className="flex justify-center md:justify-start">
-              <motion.a 
+              <a 
                 href="https://calendly.com/tanmay-iamtanmay/30min"
                 target="_blank"
                 rel="noopener noreferrer" 
-                className="bg-black text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:bg-black/90 transition-all duration-300 w-auto group relative overflow-hidden"
-                whileHover={{ 
-                  scale: 1.02,
-                  transition: { duration: 0.2 }
-                }}
+                className="bg-black text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:bg-black/90 transition-all w-auto"
               >
-                <span className="relative z-10">Book a Strategy Call</span>
-                <MessageCircle className="w-5 h-5 relative z-10" />
-                <div className="absolute inset-0 border-2 border-transparent group-hover:border-white rounded-full transition-all duration-300"></div>
-              </motion.a>
+                Book a Strategy Call
+                <MessageCircle className="w-5 h-5" />
+              </a>
             </div>
           </div>
           
-          <div className="relative flex justify-center items-center">
+          <div className="relative flex justify-center">
             <div className="relative w-1/3 aspect-square">
               <img
                 src="/lovable-uploads/72f0edda-969d-4480-ab7b-c57e9c3c183d.png"
                 alt="Tanmay"
-                className="rounded-2xl shadow-2xl object-cover w-full h-full transform-none"
+                className="rounded-2xl shadow-2xl object-cover w-full h-full"
+                style={{ transform: 'rotate(0deg)' }}
               />
             </div>
           </div>
         </div>
 
         <div className="mt-20">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+          <div className="flex flex-wrap justify-center items-center gap-16">
             <a href="https://bensbites.com" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
-              <img src="/lovable-uploads/a22e121d-b85f-4d69-837f-0c1523121397.png" alt="Ben's Bites" className="h-6 md:h-10" />
+              <img src="/lovable-uploads/a22e121d-b85f-4d69-837f-0c1523121397.png" alt="Ben's Bites" className="h-8 md:h-10" />
             </a>
             <a href="https://lindy.ai" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
-              <img src="/lovable-uploads/9cf2b3e1-78a1-4fce-a40c-8bb57ddccd5e.png" alt="Lindy" className="h-6 md:h-10" />
+              <img src="/lovable-uploads/9cf2b3e1-78a1-4fce-a40c-8bb57ddccd5e.png" alt="Lindy" className="h-8 md:h-10" />
             </a>
             <a href="https://happywagon.com" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
-              <img src="/lovable-uploads/02481cd9-fc97-4c0d-8a50-5df066b4d2e6.png" alt="Happy Wagon" className="h-6 md:h-10" />
+              <img src="/lovable-uploads/02481cd9-fc97-4c0d-8a50-5df066b4d2e6.png" alt="Happy Wagon" className="h-8 md:h-10" />
             </a>
           </div>
         </div>
