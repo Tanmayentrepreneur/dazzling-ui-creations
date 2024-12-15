@@ -50,7 +50,9 @@ export const Tutorials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="glass-card p-8 rounded-2xl group hover:-translate-y-1 transition-all duration-300"
+              className={`glass-card p-8 rounded-2xl group hover:-translate-y-1 transition-all duration-300 ${
+                index >= 4 ? 'hidden md:block' : ''
+              }`}
             >
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-xl font-semibold group-hover:text-accent transition-colors">

@@ -37,7 +37,7 @@ export const Navigation = () => {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/80 backdrop-blur-lg shadow-md' : ''}`}>
+      <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'md:bg-white/80 md:backdrop-blur-lg md:shadow-md' : ''}`}>
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             <button 
@@ -69,7 +69,7 @@ export const Navigation = () => {
                 href="https://calendly.com/tanmay-iamtanmay/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black/90 transition-all"
+                className="bg-black text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:translate-y-[-2px]"
               >
                 Book a Call
               </a>

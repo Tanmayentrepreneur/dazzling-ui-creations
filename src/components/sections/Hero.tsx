@@ -23,7 +23,7 @@ export const Hero = () => {
                 href="https://calendly.com/tanmay-iamtanmay/30min"
                 target="_blank"
                 rel="noopener noreferrer" 
-                className="bg-black text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold flex items-center gap-2 hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out group"
+                className="bg-black text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:translate-y-[-2px] group"
               >
                 <span className="group-hover:translate-x-0.5 transition-transform duration-300">Book a Strategy Call</span>
                 <MessageCircle className="w-5 h-5 group-hover:translate-x-0.5 transition-transform duration-300" />
@@ -39,7 +39,7 @@ export const Hero = () => {
               className="w-40 md:w-48 lg:w-56 aspect-square"
             >
               <img
-                src="/lovable-uploads/dcd79bf4-3a85-4b00-adea-c86643cfef2a.png"
+                src="/lovable-uploads/9f4eeae0-cf22-4c6d-9b74-26e7f5f64326.png"
                 alt="Tanmay"
                 className="rounded-2xl shadow-2xl object-cover w-full h-full"
               />
