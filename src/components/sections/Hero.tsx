@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center bg-[#DECBA4] relative overflow-hidden">
+    <section className="min-h-screen flex items-center bg-[#f6e9ce] relative overflow-hidden">
       <div className="absolute inset-0 bg-dots-pattern opacity-50"></div>
       <div className="container mx-auto px-4 py-20">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -12,7 +12,7 @@ export const Hero = () => {
               Hi, I'm Tanmay
             </h1>
             <h2 className="text-3xl md:text-4xl font-semibold mb-6">
-              I supercharge businesses with <span className="text-green-600">AI</span> ⚡
+              I Supercharge businesses with <span className="text-green-600">AI</span> ⚡
             </h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-xl">
               AI automations expert and technical AI tutorials writer at Ben's Bites (100k+ readers). 
@@ -23,7 +23,7 @@ export const Hero = () => {
                 href="https://calendly.com/tanmay-iamtanmay/30min"
                 target="_blank"
                 rel="noopener noreferrer" 
-                className="bg-black text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:bg-black/90 transition-all w-full md:w-1/2"
+                className="bg-black text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:bg-black/90 transition-all w-auto"
               >
                 Book a Strategy Call
                 <MessageCircle className="w-5 h-5" />
@@ -32,11 +32,12 @@ export const Hero = () => {
           </div>
           
           <div className="relative flex justify-center">
-            <div className="relative w-1/2 aspect-square">
+            <div className="relative w-1/3 aspect-square">
               <img
                 src="/lovable-uploads/72f0edda-969d-4480-ab7b-c57e9c3c183d.png"
                 alt="Tanmay"
                 className="rounded-2xl shadow-2xl object-cover w-full h-full"
+                style={{ transform: 'rotate(0deg)' }}
               />
             </div>
           </div>
@@ -57,8 +58,8 @@ export const Hero = () => {
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 320" className="w-full">
-          <path fill="#F7E7CE" fillOpacity="1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,208C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        <svg viewBox="0 0 1440 100" className="w-full">
+          <path fill="#FFFFFF" fillOpacity="1" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
         </svg>
       </div>
     </section>

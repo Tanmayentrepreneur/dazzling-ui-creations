@@ -17,7 +17,7 @@ const challenges = [
 
 export const Challenges = () => {
   return (
-    <section className="py-20 px-4 bg-secondary">
+    <section className="py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         <h2 className="section-title text-center">Sound familiar?</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -35,6 +35,11 @@ export const Challenges = () => {
             </motion.div>
           ))}
         </div>
+      </div>
+      <div className="absolute bottom-0 left-0 right-0">
+        <svg viewBox="0 0 1440 100" className="w-full">
+          <path fill="#f6e9ce" fillOpacity="1" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+        </svg>
       </div>
     </section>
   );

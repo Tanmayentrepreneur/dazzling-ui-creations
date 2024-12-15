@@ -21,7 +21,7 @@
   }
 
   body {
-    @apply bg-[#F7E7CE] text-black font-['Poppins'];
+    @apply bg-[#f6e9ce] text-black font-['Poppins'];
   }
 }
 

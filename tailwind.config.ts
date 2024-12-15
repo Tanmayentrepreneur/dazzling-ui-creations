@@ -29,7 +29,7 @@ export default {
           foreground: "#FFFFFF",
         },
         secondary: {
-          DEFAULT: "#DECBA4",
+          DEFAULT: "#f6e9ce",
           foreground: "#1A1A1A",
         },
         accent: {
