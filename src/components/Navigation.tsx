@@ -44,16 +44,9 @@ export const Navigation = () => {
     <>
       <nav className={`fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-black transition-all duration-300 ${
         isScrolled ? 'h-16' : 'h-24'
-      }`}>
+      } hidden md:block`}>
         <div className="container mx-auto px-4">
           <div className={`flex justify-between items-center h-full transition-all duration-300`}>
-            <button 
-              className="md:hidden p-2"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </button>
-            
             <div className="hidden md:flex space-x-12 justify-center flex-1">
               {[
                 { id: 'hero', label: 'Home' },
@@ -99,6 +92,14 @@ export const Navigation = () => {
           </div>
         </div>
       </nav>
+
+      {/* Mobile Menu Button - Only visible on mobile */}
+      <button 
+        className="fixed top-4 left-4 z-50 p-2 md:hidden bg-white/80 backdrop-blur-md rounded-md"
+        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      >
+        {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+      </button>
 
       {/* Mobile Menu - Only shown when menu button is clicked */}
       <div className={`fixed inset-y-0 left-0 transform ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'} w-64 bg-white/80 backdrop-blur-md shadow-lg transition-transform duration-300 ease-in-out z-50 md:hidden`}>
