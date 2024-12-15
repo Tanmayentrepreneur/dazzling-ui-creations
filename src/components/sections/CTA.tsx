@@ -14,10 +14,15 @@ export const CTA = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
             Let us handle your AI automation so you can focus on what you're best at.
           </h2>
-          <button className="button-primary mb-12 mx-auto flex items-center gap-2">
+          <a 
+            href="https://calendly.com/tanmay-iamtanmay/30min" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="button-primary mb-12 mx-auto flex items-center gap-2 inline-flex"
+          >
             Book a Strategy Call
             <ArrowRight className="w-5 h-5" />
-          </button>
+          </a>
           <div className="flex flex-wrap justify-center gap-8">
             <div className="flex items-center gap-2">
               <Check className="w-5 h-5 text-accent" />

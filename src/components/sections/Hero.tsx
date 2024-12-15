@@ -54,9 +54,15 @@ export const Hero = () => {
         >
           <p className="text-center text-muted-foreground mb-8">Trusted by innovative companies</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            <img src="/lovable-uploads/a22e121d-b85f-4d69-837f-0c1523121397.png" alt="Ben's Bites" className="h-8 md:h-10" />
-            <img src="/lovable-uploads/9cf2b3e1-78a1-4fce-a40c-8bb57ddccd5e.png" alt="Happy Wagon" className="h-8 md:h-10" />
-            <img src="/lovable-uploads/02481cd9-fc97-4c0d-8a50-5df066b4d2e6.png" alt="Company Logo" className="h-8 md:h-10" />
+            <a href="https://bensbites.com" target="_blank" rel="noopener noreferrer">
+              <img src="/lovable-uploads/a22e121d-b85f-4d69-837f-0c1523121397.png" alt="Ben's Bites" className="h-8 md:h-10" />
+            </a>
+            <a href="https://lindy.ai" target="_blank" rel="noopener noreferrer">
+              <img src="/lovable-uploads/9cf2b3e1-78a1-4fce-a40c-8bb57ddccd5e.png" alt="Lindy" className="h-8 md:h-10" />
+            </a>
+            <a href="https://happywagon.com" target="_blank" rel="noopener noreferrer">
+              <img src="/lovable-uploads/02481cd9-fc97-4c0d-8a50-5df066b4d2e6.png" alt="Happy Wagon" className="h-8 md:h-10" />
+            </a>
           </div>
         </motion.div>
       </div>
