@@ -5,25 +5,25 @@ export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center bg-[#f6e9ce] relative overflow-hidden">
       <div className="absolute inset-0 bg-dots-pattern opacity-50"></div>
-      <div className="container mx-auto px-4 py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-          <div className="text-left space-y-6 md:space-y-8">
+      <div className="container mx-auto px-4 py-12 md:py-20">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center max-w-6xl mx-auto">
+          <div className="w-full md:w-1/2 space-y-4 md:space-y-6">
             <h1 className="text-4xl md:text-6xl font-bold">
               Hi, I'm Tanmay
             </h1>
-            <h2 className="text-3xl md:text-4xl font-semibold">
+            <h2 className="text-2xl md:text-4xl font-semibold">
               I Supercharge businesses with <span className="text-green-600">AI</span> ⚡
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-xl">
+            <p className="text-base md:text-lg text-muted-foreground max-w-xl">
               AI automations expert and technical AI tutorials writer at Ben's Bites (100k+ readers). 
               I help businesses implement practical AI solutions that drive real results.
             </p>
-            <div className="flex justify-center md:justify-start pt-4">
+            <div className="flex justify-start pt-4">
               <a 
                 href="https://calendly.com/tanmay-iamtanmay/30min"
                 target="_blank"
                 rel="noopener noreferrer" 
-                className="bg-black text-white px-8 py-4 rounded-full font-semibold flex items-center gap-2 hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out w-fit"
+                className="bg-black text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold flex items-center gap-2 hover:scale-105 hover:shadow-lg hover:border hover:border-black transition-all duration-300 ease-in-out"
               >
                 Book a Strategy Call
                 <MessageCircle className="w-5 h-5" />
@@ -31,40 +31,39 @@ export const Hero = () => {
             </div>
           </div>
           
-          <div className="relative flex justify-center items-center">
+          <div className="w-full md:w-1/2 flex justify-center items-center">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="relative w-48 md:w-64 aspect-square"
+              className="w-40 md:w-48 lg:w-56 aspect-square"
             >
               <img
                 src="/lovable-uploads/72f0edda-969d-4480-ab7b-c57e9c3c183d.png"
                 alt="Tanmay"
-                className="rounded-2xl shadow-2xl object-cover w-full h-full"
-                style={{ transform: 'rotate(0deg)' }}
+                className="rounded-2xl shadow-2xl object-cover w-full h-full transform rotate-0"
               />
             </motion.div>
           </div>
         </div>
 
-        <div className="mt-16 md:mt-20">
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+        <div className="mt-12 md:mt-16">
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12">
             <a href="https://bensbites.com" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
-              <img src="/lovable-uploads/a22e121d-b85f-4d69-837f-0c1523121397.png" alt="Ben's Bites" className="h-6 md:h-10" />
+              <img src="/lovable-uploads/a22e121d-b85f-4d69-837f-0c1523121397.png" alt="Ben's Bites" className="h-6 md:h-8" />
             </a>
             <a href="https://lindy.ai" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
-              <img src="/lovable-uploads/9cf2b3e1-78a1-4fce-a40c-8bb57ddccd5e.png" alt="Lindy" className="h-6 md:h-10" />
+              <img src="/lovable-uploads/9cf2b3e1-78a1-4fce-a40c-8bb57ddccd5e.png" alt="Lindy" className="h-6 md:h-8" />
             </a>
             <a href="https://happywagon.com" target="_blank" rel="noopener noreferrer" className="transition-transform hover:scale-105">
-              <img src="/lovable-uploads/02481cd9-fc97-4c0d-8a50-5df066b4d2e6.png" alt="Happy Wagon" className="h-6 md:h-10" />
+              <img src="/lovable-uploads/02481cd9-fc97-4c0d-8a50-5df066b4d2e6.png" alt="Happy Wagon" className="h-6 md:h-8" />
             </a>
           </div>
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0">
-        <svg viewBox="0 0 1440 100" className="w-full" preserveAspectRatio="none">
-          <path fill="#FFFFFF" fillOpacity="1" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,100L1392,100C1344,100,1248,100,1152,100C1056,100,960,100,864,100C768,100,672,100,576,100C480,100,384,100,288,100C192,100,96,100,48,100L0,100Z"></path>
+        <svg viewBox="0 0 1440 50" className="w-full" preserveAspectRatio="none">
+          <path fill="#FFFFFF" fillOpacity="1" d="M0,16L48,18.7C96,21,192,27,288,29.3C384,32,480,32,576,29.3C672,27,768,21,864,21.3C960,21,1056,27,1152,29.3C1248,32,1344,32,1392,32L1440,32L1440,50L1392,50C1344,50,1248,50,1152,50C1056,50,960,50,864,50C768,50,672,50,576,50C480,50,384,50,288,50C192,50,96,50,48,50L0,50Z"></path>
         </svg>
       </div>
     </section>
