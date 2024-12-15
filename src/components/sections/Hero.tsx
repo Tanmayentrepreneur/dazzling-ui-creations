@@ -7,27 +7,25 @@ export const Hero = () => {
       <div className="absolute inset-0 bg-dots-pattern opacity-50"></div>
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="flex flex-col-reverse md:flex-row items-center justify-center max-w-6xl mx-auto gap-12">
-          <div className="w-full md:w-1/2 space-y-6 md:space-y-8 text-center md:text-left"> {/* Added text-center for mobile */}
+          <div className="w-full md:w-1/2 space-y-6 md:space-y-8 text-center md:text-left">
             <h1 className="text-5xl md:text-7xl font-bold">
               Hi, I'm Tanmay
             </h1>
             <h2 className="text-3xl md:text-5xl font-semibold">
               I Supercharge businesses with <span className="text-green-600">AI</span> ⚡
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0"> {/* Added mx-auto for mobile centering */}
+            <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto md:mx-0">
               AI automations expert and technical AI tutorials writer at Ben's Bites (100k+ readers). 
               I help businesses implement practical AI solutions that drive real results.
             </p>
-            <div className="flex justify-center md:justify-start pt-6"> {/* Added justify-center for mobile */}
-              <a 
-                href="https://calendly.com/tanmay-iamtanmay/30min"
-                target="_blank"
-                rel="noopener noreferrer" 
+            <div className="flex justify-center md:justify-start pt-6">
+              <button 
+                onClick={() => window.open('https://calendly.com/tanmay-iamtanmay/30min', '_blank')}
                 className="bg-black text-white px-8 md:px-10 py-4 md:py-5 rounded-full text-lg font-semibold flex items-center gap-3 transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:translate-y-[-2px] cursor-pointer group"
               >
                 <span className="group-hover:translate-x-0.5 transition-transform duration-300">Book a Strategy Call</span>
                 <MessageCircle className="w-6 h-6 group-hover:translate-x-0.5 transition-transform duration-300" />
-              </a>
+              </button>
             </div>
           </div>
           
