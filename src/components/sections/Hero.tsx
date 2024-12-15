@@ -6,8 +6,8 @@ export const Hero = () => {
     <section className="min-h-screen flex items-center bg-[#f6e9ce] relative overflow-hidden">
       <div className="absolute inset-0 bg-dots-pattern opacity-50"></div>
       <div className="container mx-auto px-4 py-12 md:py-20">
-        <div className="flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto">
-          <div className="w-full md:w-1/2 space-y-4 md:space-y-6 text-left">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-center max-w-6xl mx-auto">
+          <div className="w-full md:w-1/2 space-y-4 md:space-y-6 text-left mt-8 md:mt-0">
             <h1 className="text-4xl md:text-6xl font-bold">
               Hi, I'm Tanmay
             </h1>
@@ -23,7 +23,7 @@ export const Hero = () => {
                 href="https://calendly.com/tanmay-iamtanmay/30min"
                 target="_blank"
                 rel="noopener noreferrer" 
-                className="bg-black text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:translate-y-[-2px] group"
+                className="bg-black text-white px-6 md:px-8 py-3 md:py-4 rounded-full font-semibold flex items-center gap-2 transition-all duration-300 ease-out hover:scale-105 hover:shadow-lg hover:translate-y-[-2px] cursor-pointer group"
               >
                 <span className="group-hover:translate-x-0.5 transition-transform duration-300">Book a Strategy Call</span>
                 <MessageCircle className="w-5 h-5 group-hover:translate-x-0.5 transition-transform duration-300" />
@@ -31,15 +31,15 @@ export const Hero = () => {
             </div>
           </div>
           
-          <div className="w-full md:w-1/2 flex justify-center items-center mt-8 md:mt-0">
+          <div className="w-full md:w-1/2 flex justify-center items-center">
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="w-40 md:w-48 lg:w-56 aspect-square"
+              className="w-48 md:w-56 lg:w-64 aspect-square"
             >
               <img
-                src="/lovable-uploads/9f4eeae0-cf22-4c6d-9b74-26e7f5f64326.png"
+                src="/lovable-uploads/3abea22f-c5b5-42e4-acac-f22420a6d5c7.png"
                 alt="Tanmay"
                 className="rounded-2xl shadow-2xl object-cover w-full h-full"
               />
